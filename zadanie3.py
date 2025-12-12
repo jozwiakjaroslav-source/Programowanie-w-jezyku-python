@@ -1,6 +1,7 @@
 """Utwórz funkcję, która otrzyma w parametrze listę zawierającą 5 dowolnych liczb,
  każdy jej element pomnoży przez 2, a na końcu ją zwróci."""
 
+
 #wersja  Wykorzystując listę składaną.
 
 def pomnoz_przez_dwa_skladana(liczby_podstawowe):
