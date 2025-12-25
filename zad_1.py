@@ -16,15 +16,15 @@ class Student:
         return average_marks > 50
 
 
-student1 = Student(name="Anna Kowalska", marks=[90, 85, 75, 70])
+student1 = Student(name="Zuzia Wesoła", marks=[95, 75, 75, 75])
 
 print(f"Student: {student1.name}")
 print(f"Oceny: {student1.marks}")
-print(f"Czy zaliczył (powinno być True): {student1.is_passed()}")
-print("-" * 30)
+print(f"Czy zaliczył (ma być True): {student1.is_passed()}")
+print("-" * 20)
 
-student2 = Student(name="Piotr Nowak", marks=[50, 40, 30, 40])
+student2 = Student(name="Ignacy Ignatowicz", marks=[50, 40, 30, 40])
 
 print(f"Student: {student2.name}")
 print(f"Oceny: {student2.marks}")
-print(f"Czy zaliczył (powinno być False): {student2.is_passed()}")
+print(f"Czy zaliczył (ma być False): {student2.is_passed()}")
