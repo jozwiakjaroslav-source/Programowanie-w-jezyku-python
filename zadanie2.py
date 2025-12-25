@@ -3,7 +3,6 @@ Utwórz funkcję, która otrzyma w parametrze listę zawierającą 5 dowolnych l
  każdy jej element pomnoży przez 2, a na końcu ją zwróci
 """
 
-
 #weraja pierwsza tj z uzyciem petli for
 
 def mnozymy_przez_dwa(lista_startowa):
