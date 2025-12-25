@@ -10,7 +10,6 @@ class Brewery:
     def __str__(self) -> str:
         return f"Browar: {self.name} | Typ: {self.brewery_type} | Miasto: {self.city}, {self.state}"
 
-
 url = "https://api.openbrewerydb.org/v1/breweries?per_page=20"
 odpowiedz = requests.get(url)
 dane_surowe = odpowiedz.json()
@@ -27,7 +26,6 @@ for element in dane_surowe:
     )
 
     lista_obiektow_browarow.append(nowy_browar)
-
 
 
 print("--- WYNIK ZADANIA: LISTA 20 BROWARÓW ---\n")
