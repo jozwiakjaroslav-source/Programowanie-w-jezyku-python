@@ -74,8 +74,8 @@ class Order:
 
 
 
-library1 = Library("Kraków", "Długa 5", "30-001", "8:00-18:00", "123-456-789")
-library2 = Library("Warszawa", "Marszałkowska 10", "00-002", "9:00-17:00", "987-654-321")
+library1 = Library("Poznań", "Poznanska 10", "61-100", "8:00-18:00", "123-123-123")
+library2 = Library("Poznań", "Wrocławska 20", "61-150", "9:00-17:00", "555-555-555")
 
 
 employee1 = Employee("Anna", "Kowalska", "2020-05-01", "1990-01-01", "Kraków", "Słoneczna 1", "30-100", "111-222-333")
@@ -84,15 +84,15 @@ employee3 = Employee("Ewa", "Lis", "2022-01-20", "1995-07-25", "Kraków", "Głó
 
 
 student1 = Student("Marek", "Zieliński", 1001)
-student2 = Student("Kasia", "Wójcik", 1002)
+student2 = Student("Iga", "Swiątek", 1002)
 student3 = Student("Tomek", "Borowski", 1003)
 
 
-book1 = Book(library1, "2001-03-10", "J.R.R.", "Tolkien", 1000, "Władca Pierścieni")
-book2 = Book(library1, "1984-06-08", "George", "Orwell", 328, "Rok 1984")
-book3 = Book(library2, "2010-11-20", "Stephen", "King", 450, "Miasteczko Salem")
-book4 = Book(library2, "1995-01-01", "Joanne", "Rowling", 223, "Kamień Filozoficzny")
-book5 = Book(library1, "2018-05-15", "Olga", "Tokarczuk", 380, "Bieguni")
+book1 = Book(library1, "1905-01-01", "Henryk", "Sienkiewicz", 320, "Potop")
+book2 = Book(library1, "1890-01-01", "Bolesław", "Prus", 700, "Lalka")
+book3 = Book(library2, "2002-10-15", "Andrzej", "Sapkowski", 400, "Ostatnie życzenie")
+book4 = Book(library2, "1961-12-01", "Stanisław", "Lem", 250, "Solaris")
+book5 = Book(library1, "1937-10-01", "Witold", "Gombrowicz", 300, "Ferdydurke")
 
 
 order1 = Order(

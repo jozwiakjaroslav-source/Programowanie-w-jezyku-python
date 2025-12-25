@@ -33,32 +33,37 @@ class Flat(Property):
                 f"Pokoje: {self.rooms}\n"
                 f"Cena: {self.price:.2f} PLN")
 
-# ====================================================================
-# TWORZENIE I WYŚWIETLENIE OBIEKTÓW
-# ====================================================================
 
 house1 = House(
-    area=120.5,
-    rooms=5,
-    price=650000.00,
-    address="ul. Słoneczna 15, Poznań",
-    plot=800
+    area=145.0,
+    rooms=6,
+    price=590000.00,  # Obniżona cena
+    address="ul. Jana Ostroroga 24, Poznań",
+    plot=650
 )
 
 flat1 = Flat(
-    area=55.0,
+    area=48.5,
+    rooms=2,
+    price=315000.00,  # Okazyjna cena
+    address="ul. Szamarzewskiego 12/4, Poznań",
+    floor=2
+)
+
+
+flat2 = Flat(
+    area=62.0,
     rooms=3,
-    price=420000.00,
-    address="al. Niepodległości 2/7, Kraków",
-    floor=3
+    price=399000.00,
+    address="ul. Wierzbięcice 38/10, Poznań",
+    floor=1
 )
 
 print("=" * 40)
-print("WYŚWIETLENIE DOMU:")
+print("WYŚWIETLENIE NIERUCHOMOŚCI W POZNANIU:")
 print("=" * 40)
 print(house1)
-
-print("\n" + "=" * 40)
-print("WYŚWIETLENIE MIESZKANIA:")
-print("=" * 40)
+print("\n" + "-" * 20)
 print(flat1)
+print("\n" + "-" * 20)
+print(flat2)
