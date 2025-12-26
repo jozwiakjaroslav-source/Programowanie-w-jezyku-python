@@ -1,6 +1,7 @@
 from magazine.utils import format_price
 from magazine.Product import Product
 
+
 class Order:
     def __init__(self, employee: str, products: list[Product]):
         self.employee = employee

@@ -1,5 +1,6 @@
 from magazine.utils import format_price
 
+
 class Product:
     def __init__(self, name: str, price: float):
         self.name = name
