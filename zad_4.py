@@ -1,4 +1,7 @@
+# Zadanie 4
 import requests
+
+
 class Brewery:
     def __init__(self, id: str, name: str, brewery_type: str, city: str, state: str):
         self.id = id
@@ -19,15 +22,14 @@ lista_obiektow_browarow = []
 
 for element in dane_surowe:
     nowy_browar = Brewery(
-        id=element.get('id'),
-        name=element.get('name'),
-        brewery_type=element.get('brewery_type'),
-        city=element.get('city'),
-        state=element.get('state')
+        id=element.get("id"),
+        name=element.get("name"),
+        brewery_type=element.get("brewery_type"),
+        city=element.get("city"),
+        state=element.get("state"),
     )
 
     lista_obiektow_browarow.append(nowy_browar)
-
 
 
 print("--- WYNIK ZADANIA: LISTA 20 BROWARÓW ---\n")

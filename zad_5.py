@@ -1,5 +1,8 @@
+# Zadanie 5
+
 import requests
 import argparse
+
 
 class Brewery:
     def __init__(self, id: str, name: str, brewery_type: str, city: str, state: str):
@@ -12,8 +15,11 @@ class Brewery:
     def __str__(self) -> str:
         return f"Browar: {self.name} | Typ: {self.brewery_type} | Miasto: {self.city}, {self.state}"
 
+
 parser = argparse.ArgumentParser(description="Pobiera listę browarów z API.")
-parser.add_argument('--city', type=str, help='Nazwa miasta, z którego chcesz pobrać browary')
+parser.add_argument(
+    "--city", type=str, help="Nazwa miasta, z którego chcesz pobrać browary"
+)
 args = parser.parse_args()
 
 base_url = "https://api.openbrewerydb.org/v1/breweries"
@@ -30,14 +36,16 @@ lista_obiektow_browarow = []
 
 for element in dane_surowe:
     nowy_browar = Brewery(
-        id=element.get('id'),
-        name=element.get('name'),
-        brewery_type=element.get('brewery_type'),
-        city=element.get('city'),
-        state=element.get('state')
+        id=element.get("id"),
+        name=element.get("name"),
+        brewery_type=element.get("brewery_type"),
+        city=element.get("city"),
+        state=element.get("state"),
     )
     lista_obiektow_browarow.append(nowy_browar)
 
-print(f"--- WYNIK ZADANIA: LISTA BROWARÓW (Filtr: {args.city if args.city else 'Wszystkie'}) ---\n")
+print(
+    f"--- WYNIK ZADANIA: LISTA BROWARÓW (Filtr: {args.city if args.city else 'Wszystkie'}) ---\n"
+)
 for browar in lista_obiektow_browarow:
     print(browar)

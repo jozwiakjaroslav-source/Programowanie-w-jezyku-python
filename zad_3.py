@@ -1,3 +1,6 @@
+# Zadanie 3
+
+
 class Property:
     def __init__(self, area: float, rooms: int, price: float, address: str):
         self.area = area
@@ -12,12 +15,14 @@ class House(Property):
         self.plot = plot
 
     def __str__(self):
-        return (f"--- DOM ---\n"
-                f"Adres: {self.address}\n"
-                f"Powierzchnia domu: {self.area} m2\n"
-                f"Działka: {self.plot} m2\n"
-                f"Pokoje: {self.rooms}\n"
-                f"Cena: {self.price:.2f} PLN")
+        return (
+            f"--- DOM ---\n"
+            f"Adres: {self.address}\n"
+            f"Powierzchnia domu: {self.area} m2\n"
+            f"Działka: {self.plot} m2\n"
+            f"Pokoje: {self.rooms}\n"
+            f"Cena: {self.price:.2f} PLN"
+        )
 
 
 class Flat(Property):
@@ -26,12 +31,14 @@ class Flat(Property):
         self.floor = floor
 
     def __str__(self):
-        return (f"--- MIESZKANIE ---\n"
-                f"Adres: {self.address}\n"
-                f"Powierzchnia mieszkania: {self.area} m2\n"
-                f"Piętro: {self.floor}\n"
-                f"Pokoje: {self.rooms}\n"
-                f"Cena: {self.price:.2f} PLN")
+        return (
+            f"--- MIESZKANIE ---\n"
+            f"Adres: {self.address}\n"
+            f"Powierzchnia mieszkania: {self.area} m2\n"
+            f"Piętro: {self.floor}\n"
+            f"Pokoje: {self.rooms}\n"
+            f"Cena: {self.price:.2f} PLN"
+        )
 
 
 house1 = House(
@@ -39,7 +46,7 @@ house1 = House(
     rooms=6,
     price=590000.00,  # Obniżona cena
     address="ul. Jana Ostroroga 24, Poznań",
-    plot=650
+    plot=650,
 )
 
 flat1 = Flat(
@@ -47,7 +54,7 @@ flat1 = Flat(
     rooms=2,
     price=315000.00,  # Okazyjna cena
     address="ul. Szamarzewskiego 12/4, Poznań",
-    floor=2
+    floor=2,
 )
 
 
@@ -56,7 +63,7 @@ flat2 = Flat(
     rooms=3,
     price=399000.00,
     address="ul. Wierzbięcice 38/10, Poznań",
-    floor=1
+    floor=1,
 )
 
 print("=" * 40)
